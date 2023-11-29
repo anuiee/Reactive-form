@@ -1,0 +1,53 @@
+<h1>Reactive Form</h1>
+
+<form [formGroup]="myForm" (ngSubmit)="submit() ">
+  <div class="row">
+  <div class="col">
+  <label for="bookname">Book Name</label>
+  <input class="form-control" type="text" name="bookName" formControlName="name">
+  </div>
+  
+  <div class="col">
+  <label for="author">Author</label>
+  <input class="form-control" type="text" name="authorName" formControlName="author">
+  </div>
+  </div>
+  <div class="row">
+  <div class="col">
+  <label for="publication">Publication</label>
+  <input class="form-control" type="text" name="publicationName" formControlName="publication">
+  </div>
+  <div class="col">
+  <label for="price">Price</label>
+  <input class="form-control" type="text" name="bookprice" formControlName="price">
+  </div>
+  </div>
+  <div class="row">
+  <div class="col">
+  <label for="genre">Genre</label>
+  <input class="form-control" type="text" name="bookgenre" formControlName="genre">
+  </div>
+  <div class="col">
+  <label for="publishedDate">Published Date</label>
+  <input class="form-control" type="text" name="bookpublishedDate" formControlName="publishedDate">
+  </div></div>
+  <div class="row">
+  <div class="col">
+  <label for="country">Country</label>
+  <input class="form-control" type="text" name="countryName" formControlName="country">
+  </div>
+  <div class="col">
+  <label for="description">Description</label>
+  <textarea class="form-control" type="text" rows="2" name="bookdescription" formControlName="description" ></textarea>
+  </div></div>
+  <!-- </div> -->
+
+
+
+
+
+
+  <button type="submit" class="btn btn-primary">Save</button>
+
+
+</form>
